@@ -1,7 +1,12 @@
 package main
 
-import "pocs/polling"
+import "pocs/chatserver"
+
+//
+//func main() {
+//	polling.InitServer()
+//}
 
 func main() {
-	polling.InitServer()
+	chatserver.InitServer()
 }
