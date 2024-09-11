@@ -13,7 +13,6 @@ func InitServer() {
 	poller := &poller{
 		ec2: ec2,
 	}
-	serverMux := http.NewServeMux()
 
 	http.HandleFunc("/shortpoll", poller.shortpoll)
 	http.HandleFunc("/longpoll", poller.longpoll)
