@@ -1,12 +1,19 @@
 package main
 
-import "pocs/chatserver"
+import (
+	"pocs/websocket_scale"
+)
 
 //
 //func main() {
 //	polling.InitServer()
 //}
 
+//func main() {
+//	chatserver.InitServer()
+//}
+
 func main() {
-	chatserver.InitServer()
+	websocket_scale.InitBackend()
+	websocket_scale.InitServer()
 }
